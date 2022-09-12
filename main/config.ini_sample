@@ -1,0 +1,8 @@
+[mqtt]
+clientid = raspberrypi_pf
+transport = websockets
+hostname = example.de
+port = 443
+username = abc
+password = xyz
+tls = true
