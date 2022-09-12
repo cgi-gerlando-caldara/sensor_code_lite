@@ -9,7 +9,14 @@ from MQTT import MQTT
 from BuildHat import BuildHat
 
 # Logging
-logging.getLogger().setLevel(logging.DEBUG)
+Log_Format = "%(levelname)s %(asctime)s - %(message)s"
+
+logging.basicConfig(filename = "../logs/logfile.log",
+                    filemode = "w",
+                    format = Log_Format, 
+                    level = logging.DEBUG)
+
+logger = logging.getLogger()
 
 # Basic
 config = Config()
